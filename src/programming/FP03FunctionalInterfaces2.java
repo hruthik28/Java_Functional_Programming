@@ -20,14 +20,19 @@ public class FP03FunctionalInterfaces2 {
 
 		List<Integer> numbers = List.of(12, 9, 13, 4, 6, 2, 4, 12, 15);
 
+		//input -> boolean output
 		Predicate<Integer> isEvenPredicate = (Integer x) -> x % 2 == 0;
 
+		//input -> output
 		Function<Integer, Integer> squareFunction = x -> x * x;
 		
+		//input -> output
 		Function<Integer, String> stringOutpuFunction = x -> x + " ";
 
+		//input -> no output
 		Consumer<Integer> sysoutConsumer = x -> System.out.println(x);
 
+		//2 inputs -> 1 output, all 3 are of same dataType
 		BinaryOperator<Integer> sumBinaryOperator = (x, y) -> x + y;
 		
 		//No input > Return Something
